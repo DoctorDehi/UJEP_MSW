@@ -30,7 +30,7 @@ def improve_seed(key):
     # pokud bylo zadano alespon 5 klaves, program konci zapisem seedu do souboru
     if times >= 5:
         seed = int(temp)
-        with open("seed.txt", "a") as f:
+        with open("seeds.txt", "a") as f:
             f.write(str(seed))
             f.write("\n")
         exit()
